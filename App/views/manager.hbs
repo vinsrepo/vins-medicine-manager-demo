@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{title}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/template/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+    <link href="/template/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <!-- Custom fonts for this template -->
+    {{!--
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet"> --}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=vietnamese"
+        rel="stylesheet">
+    <link href="/template/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/template/css/resume.css" rel="stylesheet">
+
+</head>
+
+
+<body id="page-top">
+
+    <div id="contentPage" hidden>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/images/admin.jpeg" alt="">
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#waitingApprove">Waiting Approve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#approved">Approved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/">Back</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid p-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+                <div class="my-auto">
+                    <h1 class="mb-0">
+                        <span class="text-primary" id="manager-name"></span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <div id="manager-address"></div>
+                        <div id="manager-phone"></div>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="m-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="waitingApprove">
+                <div class="">
+                    <h2 class="mb-5">Waiting Approve</h2>
+
+                    <div class="resume-content mr-auto">
+                        <table>
+                            <table id="tableProducts" class="table table-hover table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Ingredient</th>
+                                        <th scope="col">Benefit</th>
+                                        <th scope="col">ProductBy</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Valid</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="wattingApprove">
+                                    
+                                </tbody>
+                            </table>
+                        </table>
+                    </div>
+                </div>
+                
+            </section>
+
+            <hr class="m-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="approved">
+                <div class="">
+                    <h2 class="mb-5">Approved</h2>
+
+                    <div class="resume-content mr-auto">
+                        <table>
+                            <table id="tableLicenses" class="table table-hover table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Nội dung</th>
+                                        <th scope="col">ĐV cấp</th>
+                                        <th scope="col">Ngày cấp</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbodyHistory">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Nội dung 1</td>
+                                        <td>ĐV cấp 1</td>
+                                        <td>Ngày cấp 1</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="m-0">
+
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/template/jquery/jquery.min.js"></script>
+    <script src="/template/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/template/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/template/js/resume.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    
+    <script src="/javascripts/web3.min.js"></script>
+    <script src="/javascripts/LBMedicine.js"></script>
+    <script src="/javascripts/manager.js"></script>
+
+    <script>
+
+        checkIsRegistered().then(res => {
+            console.log(res);
+            if (res == false) {
+                document.getElementById("contentPage").hidden = true;
+                $('#modalRegister').modal();
+            }
+            else {
+                document.getElementById("contentPage").hidden = false;
+            }
+        });
+
+
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        $('#tableProducts').DataTable();
+        $('#tableLicenses').DataTable();
+    </script>
+</body>
+
+</html>

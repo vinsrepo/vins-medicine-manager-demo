@@ -1,0 +1,32 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#infoProvider {
+  display: none;
+}
+
+.btn-custom{
+  width: 5em;
+}
+
+.box-search{
+  display: flex; justify-content: space-between; width: 100%;
+}
+.box-search >div{
+  margin: 0 0.5em;
+}
+
+.text-search{
+  flex-grow: 3;
+}
+.content {
+  width: 100%;
+  display: block;
+  min-height: 250px;
+}
