@@ -1,2 +1,3 @@
 # vins-medicine-manager
-. Created by user: SinhVK
+This is demo source code for Medicine Manager project aimed for Stateofchain Hackathon
+
